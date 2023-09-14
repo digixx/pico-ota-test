@@ -12,7 +12,7 @@ ota_updater.download_and_install_update_if_available()
 
 # Initialisierung der Onboard-LED
 led_onboard = Pin("LED", Pin.OUT)
-loopmax = 20
+loopmax = 40
 loopcntr =  0
 
 # Wiederholung (Endlos-Schleife)
