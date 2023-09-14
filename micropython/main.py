@@ -1,6 +1,7 @@
 # Bibliotheken laden
 from machine import Pin
 from time import sleep
+from machine import WDT
 
 from ota import OTAUpdater
 from WIFI_CONFIG import SSID, PASSWORD
@@ -15,8 +16,11 @@ led_onboard = Pin("LED", Pin.OUT)
 loopmax = 40
 loopcntr =  0
 
+wdt = WDT(timeout=5000)  # enable it with a timeout of 2s
+
 # Wiederholung (Endlos-Schleife)
 while True:
+	wdt.feed()
     # LED einschalten
     led_onboard.on()
     # halbe Sekunde warten
