@@ -10,7 +10,6 @@ firmware_url = "https://raw.githubusercontent.com/digixx/pico-ota-test/main/micr
 ota_updater = OTAUpdater(SSID, PASSWORD, firmware_url, "main.py")
 ota_updater.download_and_install_update_if_available()
 
-
 # Initialisierung der Onboard-LED
 led_onboard = Pin("LED", Pin.OUT)
 loopmax = 40
@@ -20,7 +19,7 @@ wdt = WDT(timeout=5000)  # enable it with a timeout of 2s
 
 # Wiederholung (Endlos-Schleife)
 while True:
-	wdt.feed()
+    wdt.feed()
     # LED einschalten
     led_onboard.on()
     # halbe Sekunde warten
