@@ -24,7 +24,7 @@ while True:
     # LED ausschalten
     led_onboard.off()
     # 1 Sekunde warten
-    sleep(0.2)
+    sleep(0.1)
     loopcntr += 1
     
     if loopcntr > loopmax:
