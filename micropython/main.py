@@ -20,7 +20,7 @@ while True:
     # LED einschalten
     led_onboard.on()
     # halbe Sekunde warten
-    sleep(0.2)
+    sleep(0.1)
     # LED ausschalten
     led_onboard.off()
     # 1 Sekunde warten
