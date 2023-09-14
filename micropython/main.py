@@ -12,7 +12,7 @@ ota_updater.download_and_install_update_if_available()
 
 # Initialisierung der Onboard-LED
 led_onboard = Pin("LED", Pin.OUT)
-loopmax = 5
+loopmax = 20
 loopcntr =  0
 
 # Wiederholung (Endlos-Schleife)
@@ -20,11 +20,11 @@ while True:
     # LED einschalten
     led_onboard.on()
     # halbe Sekunde warten
-    sleep(0.5)
+    sleep(0.2)
     # LED ausschalten
     led_onboard.off()
     # 1 Sekunde warten
-    sleep(0.5)
+    sleep(0.2)
     loopcntr += 1
     
     if loopcntr > loopmax:
