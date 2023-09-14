@@ -29,7 +29,7 @@ while True:
     # 1 Sekunde warten
     sleep(0.1)
     loopcntr += 1
-    
+
     if loopcntr > loopmax:
         loopcntr = 0
         ota_updater.download_and_install_update_if_available()
