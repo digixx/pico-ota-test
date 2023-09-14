@@ -12,7 +12,7 @@ ota_updater.download_and_install_update_if_available()
 
 # Initialisierung der Onboard-LED
 led_onboard = Pin("LED", Pin.OUT)
-loopmax = 40
+loopmax = 30
 loopcntr =  0
 
 wdt = WDT(timeout=5000)  # enable it with a timeout of 2s
